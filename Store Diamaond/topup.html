@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="topup.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topup Diamond Murah</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Top-Up @will.store.id</h1>
+        </header>
+
+        <section class="topup-form">
+            <div class="form-inner">
+                <h2>Isi Ulang Diamond</h2>
+                <form id="topupForm">
+                    <label for="userId">ID Pengguna:</label>
+                    <input type="text" id="userId" name="userId" required>
+
+                    <label for="amount">Jumlah Diamond:</label>
+                    <input type="number" id="amount" name="amount" min="1" required>
+                    
+                    <button type="submit">Top-Up</button>
+                </form>
+                <div id="responseMessage"></div>
+                <div id="progressWrapper" class="hidden">
+                    <div id="progressBar"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Top-Up Diamond Willsatouru. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="topup.js"></script>
+</body>
+</html>
